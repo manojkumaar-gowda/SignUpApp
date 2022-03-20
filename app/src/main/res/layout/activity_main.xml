@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:backgroundTint="#000000">
+
+    <!--Logo-->
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_launcher_foreground"/>
+
+    <!--Heading-->
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Sign Up"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilePic" />
+
+    <!--Name-->
+    <EditText
+        android:id="@+id/Name"
+        android:inputType="text"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUp"
+        android:hint="Name"/>
+
+    <!--Age-->
+    <EditText
+        android:id="@+id/Age"
+        android:inputType="number"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        android:hint="Age"/>
+
+    <!--Bio-->
+    <EditText
+        android:id="@+id/bio"
+        android:inputType="text"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Age"
+        android:hint="Bio"/>
+
+    <!--Mobile Number-->
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:inputType="number"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bio"
+        android:hint="Mobile Number"/>
+
+    <!--Location-->
+    <EditText
+        android:id="@+id/location"
+        android:inputType="text"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileNumber"
+
+        android:hint="Location"/>
+
+    <!--Submit Button-->
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Sign Up"
+        android:backgroundTint="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/location"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
